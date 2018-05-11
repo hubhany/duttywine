@@ -1,0 +1,198 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{
+  color: white;
+  text-align: center;
+  font-family: Releway, Roboto, Arial;
+  font-weight: lighter;
+  font-size: 30px;
+  display: block;
+  margin: 15px 100px;
+  line-height: 35px;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+  width: 25%;
+  float:left;
+  font-family: Releway, Roboto, Arial;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #303030;
+  padding: 15px 0px;
+  transition: all 1s ease;
+
+}
+
+/*
+nav a{
+  display: inline-block;
+  width: 25%;
+  font-family: Releway, Roboto, Arial;
+  font-style: italic;
+  font-weight: lighter;
+  float: left;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #272727;
+  padding: 15px 30px;
+  transition: all 1s ease;
+}
+*/
+
+a.menu:hover {
+  background-color: crimson;
+  cursor: pointer;
+}
+
+
+.container{
+  height: 100vh;
+  perspective: 2px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.row
+{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.parallax
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateZ(-1px) scale(1.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.static-background
+{
+  height: 55vh;
+  background-color: #303030;
+}
+
+.first-background
+{
+  background-image: url('champagne-cork.jpg');
+  background-position: center;
+  background-size: cover;
+
+}
+
+.second-background
+{
+  background-image: url('glass.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.third-background
+{
+  background-image: url('evening.jpg');
+  background-position: negative;
+  background-size: cover;
+}
+
+.form-horizontal .control-label {
+  float: none;
+  width: auto;
+  padding-top: 0;
+  text-align: left;
+}
+.form-horizontal .controls {
+  margin-left: 0;
+}
+.form-horizontal .control-list {
+  padding-top: 0;
+}
+.form-horizontal .form-actions {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.input-xlarge{
+  width:270px
+}
+
+.controls{
+  *display:inline-block;
+  *padding-left:20px;
+  margin-left:180px;
+  *margin-left:0
+}
+
+.btn-primary{
+  color:#fff;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+  background-color:#006dcc;*
+  background-color:#04c;
+  background-image:-moz-linear-gradient(top,#08c,#04c);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));
+  background-image:-webkit-linear-gradient(top,#08c,#04c);
+  background-image:-o-linear-gradient(top,#08c,#04c);
+  background-image:linear-gradient(to bottom,#08c,#04c);
+  background-repeat:repeat-x;
+  border-color:#04c #04c #002a80;
+  border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);
+  filter:progid:DXImageTransform.Microsoft.gradient(enabled=false)}
+
+.control-label{
+  color: white;
+  font-weight: lighter;
+}
+
+img{
+  border: 2px solid #d4a16d;
+  width: 60%;
+  background: rgba(0,0,0, .5);
+  transition: all 10s ease
+}
+
+
+@media (max-width:580px){
+  p {
+    font-size: 12px;
+    display: block;
+    margin: 5px 10px;
+    line-height: 17px;
+  }
+  nav a{
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 580px) and (max-width: 1400px){
+  p {
+    font-size: 20px;
+    display: block;
+    margin: 5px 10px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>DuttyWine</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <nav>
+          <a class ="menu" href="#header">DuttyWine</a>
+          <a class ="menu" href="#winnica">About the Vineyard</a>
+          <a class ="menu" href="#kontakt">Contact</a>
+          <a class ="menu" href ="index.html">PL</a>
+
+        </nav>
+      </header>
+
+      <section class="row">
+          <div class="parallax first-background">
+            <img src="logo_duttywine3.png">
+          </div>
+      </section>
+      <section class="row static-background"  id = "winnica">
+        <p><i>DuttyWine</i> is a place where we present only the best wines from our vineyard located above the picturesque Czorsztyn Lake and overlooking the majestic Tatra Mountains.</p>
+        <p>Fertile soil, clean air, crystalline mountain water and wonderful wild nature - only in these conditions the best grapes ripen.</p>
+        <p>Wine traditions passed down from generation to generation and carefully selected clusters are our secret. We believe that they will satisfy every demanding palate and we ensure: you will want more! </p>
+      </section>
+      <section class="row">
+          <div class="parallax second-background">
+          </div>
+      </section>
+      <section class="row static-background" id= "produkty">
+        <p>Wanting to share many years of experience and real craftsmanship, in our wine cellars we have to offer several wines from various strains. White and red wines, sweet, semi-sweet, semi-dry and dry, as well as weak, strong and fortified wines. This diversity proves the rich experience that we constantly unite.</p>
+        <p>Our products are regional wines - „Małopolski Poland Wine Region". In addition, the quality is proven by numerous awards, the GJW Quality System (Guaranteed Wine Quality) and membership in the MMałopolska Association of Winemakers.</p>
+      </section>
+      <section class="row">
+          <div class="parallax third-background">
+          </div>
+      </section>
+      <section class="row static-background" id="kontakt">
+
+        <form id="formularzKontaktowy" class="form-horizontal" action="mail.php" method="post">
+
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="text" name="email" class="input-xlarge" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="inputSubject">Subject</label>
+            <div class="controls">
+              <input type="text" name="subject" class="input-xlarge" id="inputSubject" placeholder="Temat wiadomości">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="inputMessage">Message</label>
+            <div class="controls">
+              <textarea type="text" name="message" class="input-xlarge" id="inputMessage" placeholder="Twoja wiadomość" rows="6"></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn btn-primary">Send a message</button>
+            </div>
+          </div>
+
+        </form>
+
+
+      </section>
+
+      <!--<section class="row static-background">
+      </section>
+    -->
+    </main>
+    <!--<script src="bower_components/scrollreveal-master/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('p', {
+            reset: true,
+            delay: 300
+        });
+    </script>
+-->
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+      <script src="js/vendor/bootstrap.min.js"></script>
+
+      <script>
+      $("#formularzKontaktowy").validate({
+        rules: {
+          subject: "required",
+          message: "required",
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          subject: "Nie wpisałeś tematu wiadomości",
+          message: "Nie wpisałeś treści wiadomości",
+          email: {
+            required: "Nie podałeś swojego adresu e-mail",
+            email: "Błędny format adresu e-mail"
+          }
+        }
+      });
+      </script>
+
+  </body>
+</html>

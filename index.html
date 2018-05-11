@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>DuttyWine</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <nav>
+          <a class ="menu" href="#header">DuttyWine</a>
+          <a class ="menu" href="#winnica">O winnicy</a>
+          <a class ="menu" href="#kontakt">Kontakt</a>
+          <a class ="menu" href ="indexen.html">EN</a>
+
+        </nav>
+      </header>
+
+      <section class="row">
+          <div class="parallax first-background">
+            <img src="logo_duttywine3.png">
+          </div>
+      </section>
+      <section class="row static-background"  id = "winnica">
+        <p><i>DuttyWine</i> to miejsce, w którym prezentujemy tylko najlepsze wina z naszej winnicy położonej nad malowaniczym Zalewem Czorsztyńskim i widokiem na majestatyczne Tatry.</p>
+        <p>Żyzna gleba, czyste powietrze, krystaliczna górska woda i wspaniała dzika przyroda - tylko w takich warunkach dojrzewają najlepsze winogrona.</p>
+        <p>Tradycje winiarskie przekazywane z pokolenia na pokolenie i starannie wyselekcjonowane grona oto Nasz Sekret. Wierzymy, że usatysfakcjonują one każde wymagające podniebienie oraz zapewniamy: będziesz chciał więcej! </p>
+      </section>
+      <section class="row">
+          <div class="parallax second-background">
+          </div>
+      </section>
+      <section class="row static-background" id= "produkty">
+        <p>Chcąc podzielić się wieloletnim doświadczeniem i prawdziwym rzemiosłem, w naszych piwniczkach mamy do zaoferowania kilka radzajów win z różnych szczepów. Wina białe i czerwone, słodkie, półsłodkie, półwytrawne i wytrawne, a także wina słabe, mocne i wzmacniane. Róznorodność ta świadczy o bogatym doświadczeniu, które nieustannie porzeszamy.</p>
+        <p>Nasze produkty są trunkami regionalnymi - „Małopolski Region Winiarski”. Ponadto jakości dowodzą liczne nagrody, obowiązujący System Jakości GJW (Gwarantowana Jakość Wina) oraz członkostwo w Małopolskim Stowarzyszeniu Winiarzy.</p>
+      </section>
+      <section class="row">
+          <div class="parallax third-background">
+          </div>
+      </section>
+      <section class="row static-background" id="kontakt">
+
+        <form id="formularzKontaktowy" class="form-horizontal" action="mail.php" method="post">
+
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="text" name="email" class="input-xlarge" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="inputSubject">Temat</label>
+            <div class="controls">
+              <input type="text" name="subject" class="input-xlarge" id="inputSubject" placeholder="Temat wiadomości">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="inputMessage">Wiadomość</label>
+            <div class="controls">
+              <textarea type="text" name="message" class="input-xlarge" id="inputMessage" placeholder="Twoja wiadomość" rows="6"></textarea>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+            </div>
+          </div>
+
+        </form>
+
+
+      </section>
+
+      <!--<section class="row static-background">
+      </section>
+    -->
+    </main>
+    <!--<script src="bower_components/scrollreveal-master/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('p', {
+            reset: true,
+            delay: 300
+        });
+    </script>
+-->
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+      <script src="js/vendor/bootstrap.min.js"></script>
+
+      <script>
+      $("#formularzKontaktowy").validate({
+        rules: {
+          subject: "required",
+          message: "required",
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          subject: "Nie wpisałeś tematu wiadomości",
+          message: "Nie wpisałeś treści wiadomości",
+          email: {
+            required: "Nie podałeś swojego adresu e-mail",
+            email: "Błędny format adresu e-mail"
+          }
+        }
+      });
+      </script>
+
+  </body>
+</html>

@@ -1,0 +1,157 @@
+body {
+  margin: 0
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section.module h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: rgba(204,204,204,1);
+}
+
+section.module p {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+section.module p:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content {
+  padding: 60px 0;
+  text-align: left;
+}
+
+section.module.parallax {
+  height: 800px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 48px;
+  line-height: 800px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+  background-image: url(champagne-cork.jpg);
+}
+
+section.module.parallax-2 {
+  background-image: url(glass.jpg);
+}
+
+section.module.parallax-3 {
+  background-image: url(glass.jpg);
+}
+
+@media all and (min-width: 600px) {
+    section.module h2 {
+    font-size: 38px;
+    }
+
+    section.module a {
+    font-size: 22px;
+    }
+
+    section.module.parallax h1 {
+    font-size: 82px;
+    }
+
+}
+
+@media all and (min-width: 960px) {
+    section.module.parallax h1 {
+    font-size: 145px;
+    }
+}
+
+@media all and (max-width: 680px) {
+     section.module.content {
+     text-align: center;
+     }
+}
+
+
+/*body
+{
+  margin: 0;
+}
+
+p{
+  color: white;
+  text-align: center;
+  font-family: Releway, Roboto, Arial;
+  font-weight: lighter;
+  font-size: 30px;
+  margin: 15px 100px;
+  line-height: 35px;
+}
+
+.container{
+  height: 100vh;
+  perspective: 2px;
+  overflow-x: hidden;
+}
+
+.row
+{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.parallax
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateZ(-1px) scale(1.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.static-background
+{
+  height: 55vh;
+  background-color: #303030;
+}
+
+.first-background
+{
+  background-image: url('champagne-cork.jpg');
+  background-position: center;
+  background-size: cover;
+
+}
+
+.second-background
+{
+  background-image: url('glass.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+*/
